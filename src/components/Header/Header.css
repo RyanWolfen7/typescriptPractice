@@ -1,0 +1,42 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 600px) {
+  .page-header {
+      background: #AA1B64;
+      flex-wrap: wrap;
+      width: 100%;
+  }
+  .page-nav {
+    order: 2;
+    background: #333;
+    width: 100%;
+  }
+}
+
+img {
+  height: 200px;
+}
+
+.page-header {
+  height: 200px;
+  background: #AA1B64;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.page-nav ul { 
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.page-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px;
+  display: inline-block;
+}
