@@ -1,0 +1,16 @@
+.user-list-wrapper {
+    margin: 15rem 2rem 0;
+    padding: 0 5rem;
+    max-width: auto;
+    background-color: #f7f5f3;
+    border-radius: 0.3rem;
+    height: auto;
+}
+
+.user-list-section {
+  max-width: 800px;
+  margin: auto;
+  background-color: #4B257D;
+  color: #ffff;
+  overflow: scroll;
+}
