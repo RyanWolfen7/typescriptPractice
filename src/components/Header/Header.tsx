@@ -1,21 +1,9 @@
 import React from 'react'
+import HeaderInterface from './HeaderInterface'
 
-interface item {
-  name: string;
-  limit: number;
-}
 
-export interface Ryan {
-
-  data: item[];
-  show?: boolean;
-  delivery_collect: 'delivery' | 'collect' | 'postal'
-
-}
-
-const Header: React.FC<Ryan> = ({ data }) => {
-
-  let [{ name }] = data
+const Header: React.FC<HeaderInterface> = (data) => {
+  let numberOfProtectedPeople = data
 
 
   return (
