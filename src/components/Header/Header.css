@@ -2,14 +2,20 @@
 
 @media (max-width: 600px) {
   .page-header {
+      order: 1;
       background: #AA1B64;
       flex-wrap: wrap;
-      width: 100%;
+      width: 100vw;
   }
   .page-nav {
     order: 2;
-    background: #333;
-    width: 100%;
+    background: #ffffff;
+    width: 100vw;
+  }
+  .user-list-wrapper {
+    order: 3;
+    width: 100vw;
+    justify-self: end;
   }
 }
 

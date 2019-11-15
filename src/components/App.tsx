@@ -9,9 +9,10 @@ dotenv.config()
 const App: React.FC = () => {
   const [listOfPeople, setListOfPeople] = useState([])
   const [totalOfPeople, setTotalOfPeople] = useState(0)
+
   useEffect(() => {
     const fetchData = async () => {
-      const { data: { body: { people: data } } } = await axios.get(url, { params: {}, headers: { 'x-api-key': process.env.API_KEY } })
+      const { data: { body: { people: data } } } = await axios.get(url, { params: {}, headers: { 'x-api-key': 'ZVmyJL5tZk8Dl6OETYtcs78vrWkiLssj4xQcr3bW' } })
       if (data) {
         setListOfPeople(data);
         setTotalOfPeople([...data].length)
@@ -25,7 +26,7 @@ const App: React.FC = () => {
     <div className="App">
       <Header numberOfProtectedPeople={totalOfPeople} />
       <div className='ContentWrapper'>
-        <UserListContainer props={listOfPeople} />
+        <UserListContainer listOfUsers={listOfPeople} />
       </div>
     </div>
   )

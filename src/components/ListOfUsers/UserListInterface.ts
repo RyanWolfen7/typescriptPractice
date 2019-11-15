@@ -1,4 +1,4 @@
-interface User {
+export interface User {
   age: number
   first_name: string
   id: number
@@ -6,6 +6,6 @@ interface User {
   risk_percentage: number
 }
 
-export default interface UserListInterface {
-  props: User[]
+export interface UserListInterface {
+  listOfUsers: User[]
 }
