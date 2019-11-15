@@ -12,16 +12,40 @@
   max-width: 800px;
   margin: 20px;
   padding: 20px;
-  background-color: #AA1B64;
+  background: rgb(144,28,155);
+background: linear-gradient(90deg, rgba(144,28,155,1) 12%, rgba(156,28,68,1) 37%, rgba(157,28,104,1) 49%, rgba(158,28,82,1) 68%, rgba(159,28,67,1) 77%, rgba(160,27,103,1) 95%, rgba(170,26,100,1) 100%);
   color: #ffff;
-  display: flex;
-  justify-content: space-between;
 }
 
-.user-list-section div {
+.user-list-section-top {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.user-list-section-top div {
   align-self: flex-start;
 }
 
-.user-list-section button {
+.user-list-section-top button {
   align-self: flex-end;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.hidden-text-container::before {
+  height: 0px;
+  width: auto;
+}
+.hidden-text-container {
+ 
+
+  margin: 10px 10px 0;
+  padding: 10px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+.hidden-text-container div{
+  align-content: flex-start;
 }

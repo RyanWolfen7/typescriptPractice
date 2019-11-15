@@ -4,6 +4,7 @@ export interface User {
   id: number
   last_name: string
   risk_percentage: number
+  nationality: string
 }
 
 export interface UserListInterface {
