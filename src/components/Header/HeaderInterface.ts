@@ -1,4 +1,4 @@
-
 export default interface HeaderInterface {
-  numberOfProtectedPeople: number;
+  numberOfProtectedPeople: number
+  setAddToListPopup: CallableFunction
 }

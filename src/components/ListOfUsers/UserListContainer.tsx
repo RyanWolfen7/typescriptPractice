@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { UserListInterface, User } from './UserListInterface'
 import './UserList.css'
-import { bool } from 'prop-types'
 
 const UserListContainer: React.FC<UserListInterface> = props => {
-  const listOfUsers = props.listOfUsers
+  const { listOfUsers } = props
   const [openDetails, setOpenDetails] = useState<Array<boolean>>([])
 
   const renderList = (user: User, index: number) => {
@@ -34,9 +33,11 @@ const UserListContainer: React.FC<UserListInterface> = props => {
   }
 
   return (
-    <div className='user-list-wrapper'>
-      {listOfUsers.map((user, index) => renderList(user, index))}
-    </div>
+    <>
+      <div className='user-list-wrapper'>
+        {listOfUsers.map((user, index) => renderList(user, index))}
+      </div>
+    </>
   )
 }
 

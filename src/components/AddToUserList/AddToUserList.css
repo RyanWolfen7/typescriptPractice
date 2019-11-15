@@ -1,0 +1,52 @@
+.add-user-overlay {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.modal {
+  height:  100%;
+  width: 100%;
+  background-color: #e4cbe3;
+  background: -moz-linear-gradient(-45deg, rgba(252,236,252,1) 0%, rgb(166, 110, 211) 25%, rgb(187, 128, 187) 37%, rgba(251,166,225,1) 44%, rgba(251,166,225,1) 52%, rgba(253,137,215,1) 64%, rgba(251,166,225,1) 72%, rgba(255,124,216,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 25%,rgba(251,166,225,1) 37%,rgba(251,166,225,1) 44%,rgba(251,166,225,1) 52%,rgba(253,137,215,1) 64%,rgba(251,166,225,1) 72%,rgba(255,124,216,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 25%,rgba(251,166,225,1) 37%,rgba(251,166,225,1) 44%,rgba(251,166,225,1) 52%,rgba(253,137,215,1) 64%,rgba(251,166,225,1) 72%,rgba(255,124,216,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border: solid white 5px;
+  border-radius: 5%;
+}
+
+.modal-header {
+  display: flex;
+  flex: wrap;
+  justify-content: space-evenly;
+}
+
+.modal-header button {
+  cursor: pointer;
+  align-self: center;
+}
+
+.modal-header h3 {
+  align-self: flex-start;
+}
+
+.modal-content form {
+  padding: 10% 20% 0;
+}
+
+.modal-content input {
+  margin: 0 40% 0;
+}
+
+.modal-content span {
+  font-size: 12px;
+  color: red;
+}
+
+.modal-content textarea {
+  width: 300px;
+  height:200px;
+}

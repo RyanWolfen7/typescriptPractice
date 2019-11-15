@@ -31,12 +31,32 @@ img {
   align-items: center;
 }
 
+.page-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .page-nav ul { 
   margin-left: auto;
-  display: flex;
-  justify-content: flex-end;
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-content: center;
 }
+
+.page-nav ul button{ 
+  cursor: pointer;
+  color: #ffff;
+  border-radius: 50%;
+  height: 100%;
+  background: rgb(144,28,155);
+  background: -moz-linear-gradient(90deg, rgba(144,28,155,1) 2%, rgba(177,13,193,1) 11%, rgba(191,58,185,1) 17%, rgba(177,21,213,1) 26%, rgba(171,37,179,1) 38%, rgba(148,27,160,1) 48%, rgba(193,40,214,1) 63%, rgba(150,26,170,1) 74%, rgba(194,51,217,1) 87%);
+  background: -webkit-linear-gradient(90deg, rgba(144,28,155,1) 2%, rgba(177,13,193,1) 11%, rgba(191,58,185,1) 17%, rgba(177,21,213,1) 26%, rgba(171,37,179,1) 38%, rgba(148,27,160,1) 48%, rgba(193,40,214,1) 63%, rgba(150,26,170,1) 74%, rgba(194,51,217,1) 87%);
+  background: linear-gradient(45deg, rgba(144,28,155,1) 2%, rgba(177,13,193,1) 11%, rgba(191,58,185,1) 17%, rgba(177,21,213,1) 26%, rgba(171,37,179,1) 38%, rgba(148,27,160,1) 48%, rgba(193,40,214,1) 63%, rgba(150,26,170,1) 74%, rgba(194,51,217,1) 87%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#901c9b",endColorstr="#c233d9",GradientType=1);
+}
+
 .page-nav a {
   text-transform: uppercase;
   text-decoration: none;
