@@ -22,8 +22,17 @@ const App: React.FC = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    setTotalOfPeople(listOfPeople.length)
+  }, [listOfPeople])
+
   const renderPopup = () => {
     setAddToListPopup(!addToListPopup)
+  }
+
+  const updateUsers = (array: User[]) => {
+    setListOfPeople([...listOfPeople, ...array])
+    setAddToListPopup(false)
   }
 
   return (
@@ -32,7 +41,7 @@ const App: React.FC = () => {
       <div className='ContentWrapper'>
         <UserListContainer listOfUsers={listOfPeople} />
       </div>
-      {addToListPopup && <AddToUserList renderPopup={renderPopup} updateUsers={setListOfPeople} />}
+      {addToListPopup && <AddToUserList renderPopup={renderPopup} updateUsers={updateUsers} totalOfPeople={totalOfPeople} />}
       <a> © Privitar 2019 </a>
     </div>
   )
