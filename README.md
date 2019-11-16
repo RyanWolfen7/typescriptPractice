@@ -31,7 +31,7 @@ Start the App
 
 Optional Run Cypress
 
-    npm run cypress:open
+    npx cypress run
 
 
 ### Wanted goal
