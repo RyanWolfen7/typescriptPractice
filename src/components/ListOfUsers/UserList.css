@@ -32,6 +32,7 @@
   align-self: flex-end;
   border-radius: 50%;
   font-size: 15px;
+  color: #4B257D;
 }
 
 .hidden-text-container::before {
